@@ -1,0 +1,35 @@
+<div class="browseComp">
+  <div class="topText" id="browse">
+    <line-text text="Blog"></line-text>
+    <h3>Browse articles</h3>
+  </div>
+  <div class="browseArticles">
+    @for (item of data; track $index) {
+    <div class="article">
+      <img [src]="item.imageSrc" alt="preview" class="preview" />
+      <div class="about-info">
+        <div class="info">
+          <img src="../../../assets/otherimages/User.svg" alt="" />
+          <p class="infoText">{{ item.author }}</p>
+        </div>
+        <div class="info">
+          <img src="../../../assets/otherimages/CalendarBlank.svg" alt="" />
+          <p class="infoText">{{ item.date }}</p>
+        </div>
+      </div>
+      <h4>{{ item.title }}</h4>
+      <div class="readMore">
+        <p>Read more</p>
+        <img
+          src="../../../assets/otherimages/ArrowRightGrey.svg"
+          alt="arrow"
+          style="opacity: 0.8"
+        />
+      </div>
+    </div>
+    }
+  </div>
+  <div class="view">
+    <custom-button text="View all"></custom-button>
+  </div>
+</div>

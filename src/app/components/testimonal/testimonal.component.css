@@ -1,0 +1,37 @@
+.topText {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 184px 0 80px 0;
+}
+.topText > h3{
+  margin-top: 16px;
+}
+.testimonals {
+  display: flex;
+  justify-content: space-around;
+}
+.testimonal {
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  padding: 32px;
+}
+.testimonal > p {
+  font-weight: 700;
+}
+.text {
+  font-weight: 400;
+  width: 294px;
+}
+.rating {
+  display: flex;
+  align-items: center;
+  width: 61px;
+  height: 24px;
+  margin: 16px 0 16px 0;
+}
+.rating > p {
+  font-weight: 700;
+  margin-left: 4px;
+}

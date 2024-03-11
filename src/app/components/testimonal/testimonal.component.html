@@ -1,0 +1,22 @@
+<div class="topText">
+  <line-text text="Testimonal"></line-text>
+  <h3>Student Testimonial</h3>
+</div>
+<div class="testimonals">
+  @for (item of data; track $index) {
+  <div class="testimonal">
+    <p>{{ item.author }}</p>
+    <sup>{{ item.spec }}</sup>
+    <div class="rating">
+      <img
+        src="../../../assets/otherimages/Star.svg"
+        alt="star"
+        width="24px"
+        height="24px"
+      />
+      <p>{{ item.rating }}</p>
+    </div>
+    <sup class="text">{{ item.text }}</sup>
+  </div>
+  }
+</div>

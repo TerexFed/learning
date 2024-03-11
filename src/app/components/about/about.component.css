@@ -1,0 +1,38 @@
+.about {
+  display: flex;
+  flex-direction: column;
+  margin: 0 80px 0 80px;
+}
+.main{
+    display: flex;
+    justify-content: space-between;
+}
+.info {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 440px;
+}
+.info > p {
+    width: 528px;
+}
+.numbers{
+  display: flex;
+  justify-content: space-around;
+  height: 213px;
+  margin-top: 80px;
+}
+.number{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  height: 213px;
+}
+.number > h2 > span{
+  color: rgb(164, 7, 77);
+}
+.number > p{
+  text-align: center;
+  width: 200px;
+}
